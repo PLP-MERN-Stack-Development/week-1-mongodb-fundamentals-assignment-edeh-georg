@@ -2,6 +2,7 @@
 
 // Import MongoDB client
 const { MongoClient } = require('mongodb');
+const { performQueriesTask3, performQueriesTask4, performQueriesTask5 } = require('./queries')
 
 // Connection URI (replace with your MongoDB connection string if using Atlas)
 const uri = 'mongodb://localhost:27017';
@@ -166,6 +167,11 @@ async function insertBooks() {
       console.log(`${index + 1}. "${book.title}" by ${book.author} (${book.published_year})`);
     });
 
+    console.log(`Result from task 3: ${performQueriesTask3(collection)}`);
+    console.log(`Result from task 4: ${performQueriesTask4(collection)}`);
+    console.log(`Result from task 5: ${performQueriesTask5(collection)}`);
+
+
   } catch (err) {
     console.error('Error occurred:', err);
   } finally {
@@ -195,4 +201,3 @@ insertBooks().catch(console.error);
  *
  * 5. Find in-stock books:
  *    db.books.find({ in_stock: true })
- */ 
