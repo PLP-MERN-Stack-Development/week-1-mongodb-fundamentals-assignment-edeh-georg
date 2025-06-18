@@ -101,8 +101,7 @@ function performQueriesTask5(collection) {
 };
 
 
-module.exports = {
-    performQueriesTask3,
-    performQueriesTask4,
-    performQueriesTask5
-};
+console.log(`Result from task 3: ${performQueriesTask3(collection)}`);
+console.log(`Result from task 4: ${performQueriesTask4(collection)}`);
+console.log(`Result from task 5: ${performQueriesTask5(collection)}`);
+
