@@ -40,6 +40,12 @@ Your work will be automatically submitted when you push to your GitHub Classroom
 3. Include a screenshot of your MongoDB database
 4. Update the README.md with your specific setup instructions
 
+## Setup instructions
+1. Make sure the mongo server is up and running
+2. Ensure that you have installed node
+3. run the insert_books.js script using `node insert_books.js`
+4. run the queries.js script using `node queries.js`
+
 ## Resources
 
 - [MongoDB Documentation](https://docs.mongodb.com/)
