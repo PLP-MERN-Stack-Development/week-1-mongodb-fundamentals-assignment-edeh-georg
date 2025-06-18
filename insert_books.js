@@ -2,7 +2,6 @@
 
 // Import MongoDB client
 const { MongoClient } = require('mongodb');
-const { performQueriesTask3, performQueriesTask4, performQueriesTask5 } = require('./queries')
 
 // Connection URI (replace with your MongoDB connection string if using Atlas)
 const uri = 'mongodb://localhost:27017';
@@ -158,7 +157,7 @@ async function insertBooks() {
 
     // Insert the books
     const result = await collection.insertMany(books);
-    console.log(`${result.insertedCount} books were successfully inserted into the dasettings/ssh/newtabase`);
+    console.log(`${result.insertedCount} books were successfully inserted into the database`);
 
     // Display the inserted books
     console.log('\nInserted books:');
@@ -196,3 +195,4 @@ insertBooks().catch(console.error);
  *
  * 5. Find in-stock books:
  *    db.books.find({ in_stock: true })
+ */ 
