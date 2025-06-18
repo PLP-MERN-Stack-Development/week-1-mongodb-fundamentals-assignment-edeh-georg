@@ -167,11 +167,6 @@ async function insertBooks() {
       console.log(`${index + 1}. "${book.title}" by ${book.author} (${book.published_year})`);
     });
 
-    console.log(`Result from task 3: ${performQueriesTask3(collection)}`);
-    console.log(`Result from task 4: ${performQueriesTask4(collection)}`);
-    //console.log(`Result from task 5: ${performQueriesTask5(collection)}`);
-
-
   } catch (err) {
     console.error('Error occurred:', err);
   } finally {
