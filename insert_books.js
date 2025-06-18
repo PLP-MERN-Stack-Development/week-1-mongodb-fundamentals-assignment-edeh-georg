@@ -158,7 +158,7 @@ async function insertBooks() {
 
     // Insert the books
     const result = await collection.insertMany(books);
-    console.log(`${result.insertedCount} books were successfully inserted into the database`);
+    console.log(`${result.insertedCount} books were successfully inserted into the dasettings/ssh/newtabase`);
 
     // Display the inserted books
     console.log('\nInserted books:');
@@ -169,7 +169,7 @@ async function insertBooks() {
 
     console.log(`Result from task 3: ${performQueriesTask3(collection)}`);
     console.log(`Result from task 4: ${performQueriesTask4(collection)}`);
-    console.log(`Result from task 5: ${performQueriesTask5(collection)}`);
+    //console.log(`Result from task 5: ${performQueriesTask5(collection)}`);
 
 
   } catch (err) {
